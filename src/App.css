@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main,.heading{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+.doctorOuter{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doctor{
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid rgb(93, 105, 93);
+  border-radius: 5px;
+  font-size: 15px;
+  margin-left: -20px;
+  transition: all .2s;
+}
+.doctor:hover{
+  color: white;
+  background-color:rgb(93, 105, 93);
+}
+.inner{
+  width: 100%;
+}
+.individual
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+.elements{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.center{
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.center input{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+.dayName{
+  background-color: rgb(37, 108, 240);
+  padding: 10px;
+  border-radius: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.elements input{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center span{
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.elements .add{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.saveBtn{
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  background-color: rgb(83, 165, 51);
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.saveBtn:active{
+  background-color: green;
+}
+.cover{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.submitBtn{
+  padding: 5px 10px;
+  border: 2px solid rgb(43, 170, 75); 
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all .2s;
+}
+.submitBtn:hover{
+  background-color: rgb(43, 170, 75);
+  color: white;
+}
+.totalHrs{
+  margin-left:50px ;
+}
+.subInput{
+  text-align: center;
 }
